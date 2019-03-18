@@ -24,6 +24,8 @@ public class UserController {
 	
 	@RequestMapping("/all")
 	public String getAllUser(){
+		
+		
 		List<User> allUser = userService.getAllUser();
 		return JSON.toJSONString(allUser);
 	}
