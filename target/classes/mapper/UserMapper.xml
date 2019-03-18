@@ -13,6 +13,7 @@
 		user_id,user_name,password,phone,create_time
 	</sql>
 	
+	
 	<select id="findUserByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
 		SELECT 
 			<include refid="Base_Column_List"/>
