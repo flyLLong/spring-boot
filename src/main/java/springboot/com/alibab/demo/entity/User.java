@@ -1,4 +1,4 @@
-package springboot.com.alibab.entity;
+package springboot.com.alibab.demo.entity;
 
 import java.io.Serializable;
 import java.util.Date;

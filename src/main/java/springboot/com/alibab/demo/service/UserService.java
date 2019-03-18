@@ -1,8 +1,8 @@
-package springboot.com.alibab.service;
+package springboot.com.alibab.demo.service;
 
 import java.util.List;
 
-import springboot.com.alibab.entity.User;
+import springboot.com.alibab.demo.entity.User;
 
 public interface UserService {
 	

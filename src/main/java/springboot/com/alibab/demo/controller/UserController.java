@@ -1,4 +1,4 @@
-package springboot.com.alibab.controller;
+package springboot.com.alibab.demo.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSON;
 
-import springboot.com.alibab.entity.User;
-import springboot.com.alibab.service.UserService;
+import springboot.com.alibab.demo.entity.User;
+import springboot.com.alibab.demo.service.UserService;
 
 @RestController
 @RequestMapping("/user")
@@ -24,7 +24,6 @@ public class UserController {
 	
 	@RequestMapping("/all")
 	public String getAllUser(){
-		log.info("controller in ");
 		List<User> allUser = userService.getAllUser();
 		return JSON.toJSONString(allUser);
 	}
