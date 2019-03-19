@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSON;
 
+import springboot.com.alibab.config.AppServiceProcess;
 import springboot.com.alibab.demo.entity.User;
 import springboot.com.alibab.demo.service.UserService;
 
@@ -25,6 +26,7 @@ public class UserController {
 	@RequestMapping("/all")
 	public String getAllUser(){
 		List<User> allUser = userService.getAllUser();
+		log.info("domainProcessMap is : {}", AppServiceProcess.getDomainProcessMap());
 		return JSON.toJSONString(allUser);
 	}
 }
