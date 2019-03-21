@@ -8,7 +8,7 @@ public class CallDomainProcess extends BaseDomainProcess{
 	public static final String DOMAIN_NAME = "call";
 	
 	@Override
-	protected String getDomainName() {
+	public String getDomainName() {
 		return DOMAIN_NAME;
 	}
 	

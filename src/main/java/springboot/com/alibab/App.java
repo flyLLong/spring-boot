@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("springboot.com.alibab.mapper")
+@MapperScan("springboot.com.alibab.demo.mapper")
 public class App {
 
 	public static void main(String[] args) {
