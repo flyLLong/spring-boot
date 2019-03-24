@@ -27,7 +27,7 @@ public class UserController {
 	private UserService userService;
 	
 	@RequestMapping("/all")
-	public String getAllUser(@RequestParam Long domainId){
+	public String getAllUser(@RequestParam Long domainId) {
 		log.info("domain ID is {}", domainId);
 		Map<Long, BaseDomainProcess> domainProcessMap = AppServiceProcess.getDomainProcessMap();
 		BaseDomainProcess domainProcess = domainProcessMap.get(domainId);
@@ -37,4 +37,11 @@ public class UserController {
 		List<User> allUser = userService.getAllUser();
 		return JSON.toJSONString(allUser);
 	}
+	
+	@RequestMapping("/u")
+	public String findUserByUserId(@RequestParam int userId) {
+		User user = userService.findByUserId(userId);
+		return JSON.toJSONString(user);
+	}
+	
 }
